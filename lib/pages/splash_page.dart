@@ -19,7 +19,7 @@ class SplashPage extends StatelessWidget {
       });
     } else if (authState.authStatus == AuthStatus.unauthenticated) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        Navigator.pushNamed(context, SignInPage.routeName);
+        Navigator.pushNamed(context, SigninPage.routeName);
       });
     }
 

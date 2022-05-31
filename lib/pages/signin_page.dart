@@ -7,15 +7,15 @@ import 'package:flutter/material.dart';
 import 'package:validators/validators.dart';
 import 'package:provider/provider.dart';
 
-class SignInPage extends StatefulWidget {
-  SignInPage({Key? key}) : super(key: key);
+class SigninPage extends StatefulWidget {
+  SigninPage({Key? key}) : super(key: key);
   static const String routeName = "/signin";
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<SigninPage> createState() => _SigninPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _SigninPageState extends State<SigninPage> {
   final _formKey = GlobalKey<FormState>();
   AutovalidateMode _autovalidateMode = AutovalidateMode.disabled;
   String? _email, _password;
@@ -140,7 +140,7 @@ class _SignInPageState extends State<SignInPage> {
                               ? null
                               : () {
                                   Navigator.pushNamed(
-                                      context, SignUpPage.routeName);
+                                      context, SignupPage.routeName);
                                 },
                       child: Text("Not a member? Sign up!"),
                       style: TextButton.styleFrom(
